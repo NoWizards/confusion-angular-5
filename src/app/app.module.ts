@@ -28,6 +28,7 @@ import {PromotionService } from './services/promotion.service';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { LoginComponent } from './login/login.component';
 import { FormsModule } from '@angular/forms';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 
 @NgModule({
@@ -54,7 +55,8 @@ import { FormsModule } from '@angular/forms';
     MatIconModule,
     AppRoutingModule,
     MatDialogModule,
-    FormsModule
+    FormsModule,
+    MatProgressSpinnerModule
   ],
   providers: [ DishService,
     PromotionService],

@@ -6,8 +6,11 @@ import { DISHES } from '../shared/dishes'
 export class DishService {
 
   constructor() { }
+
   getDishes(): Promise<Dish[]> {
-    return Promise.resolve(DISHES);
+    return new Promise(resolve =>{
+      setTimeout(()=> resolve(DISHES), 2000)
+    });
   }
 
   getDish(id: number): Promise<Dish> {
